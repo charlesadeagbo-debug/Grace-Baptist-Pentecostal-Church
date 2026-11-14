@@ -111,8 +111,8 @@ Download My Flyer
 
 // LOAD YOUR FLYER
 const flyer = new Image();
-flyer.src = "flyer.png";
 // EDIT THESE SETTINGS TO MATCH YOUR FLYER
+
 
 
 const PHOTO_BOX = {
@@ -129,6 +129,7 @@ const NAME_POSITION = {
   fontSize: 0.035,
   color: "#000000"
 };
+
 
 
 
@@ -224,6 +225,7 @@ function drawFlyer() {
 flyer.onload = drawFlyer;
 flyer.onerror = () => {
   alert("Could not load flyer.png. Check the filename.");
+  flyer.src = "flyer.png";
 };
 
 // Enter name
