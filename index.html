@@ -222,11 +222,16 @@ function drawFlyer() {
 }
 
 // Load original flyer
+
+// Load original flyer
 flyer.onload = drawFlyer;
+
 flyer.onerror = () => {
   alert("Could not load flyer.png. Check the filename.");
-  flyer.src = "flyer.png";
 };
+
+flyer.src = "flyer.png";
+
 
 // Enter name
 nameInput.addEventListener("input", drawFlyer);
